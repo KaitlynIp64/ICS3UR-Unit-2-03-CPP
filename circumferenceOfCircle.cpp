@@ -9,21 +9,17 @@
 #include <iostream>
 
 int main() {
-    // this function calculates the area and perimeter of a circle
-    const int radiusOfCircle;
-    double circumferenceOfCircle;
-
+    // this function calculates circumference of a circle
+    const double TAU = 6.28;
+    int radius;
+    double circumference;
     // input
     std::cout << "Enter radius of the circle (mm): ";
-    std::cin >> radiusOfCircle;
-
+    std::cin >> radius;
     // process
-    circumferenceOfCircle = radiusOfCircle * widthOfRectangle;
-    perimeterOfRectangle = 2 * (lengthOfRectangle + widthOfRectangle);
-
+    circumference = TAU * radius;
     // output
     std::cout << "" << std::endl;
-    std::cout << "Perimeter is " << (M_TAU * radiusOfCircle) << " mm." << std::endl;
-
+    std::cout << "Circumference is " << circumference << " mm" << std::endl;
     std::cout << "\nDone." << std::endl;
 }
